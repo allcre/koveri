@@ -701,7 +701,6 @@ export async function extractSubstackPosts(
 
 export interface SteamGame {
   game_name: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   hours_played?: any; // Can be number, string, or any format from Yellowcake
 }
 

@@ -49,9 +49,7 @@ export const ChatMessage = ({ message }: ChatMessageProps) => {
   );
 };
 
-interface TypingIndicatorProps {}
-
-export const TypingIndicator = ({}: TypingIndicatorProps) => {
+export const TypingIndicator = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex gap-3">
       <IconCircle variant="match" size="sm">

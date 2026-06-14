@@ -39,7 +39,7 @@ serve(async (req) => {
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY is not configured");
 
-    let systemPrompt = `You are a witty, data-driven matchmaker. You create engaging, authentic profiles that highlight someone's quirks and personality based on their data and preferences. You write in a warm, playful tone that feels genuine. You never sound cheesy or try-hard.`;
+    const systemPrompt = `You are a witty, data-driven matchmaker. You create engaging, authentic profiles that highlight someone's quirks and personality based on their data and preferences. You write in a warm, playful tone that feels genuine. You never sound cheesy or try-hard.`;
 
     let userPrompt = "";
 
